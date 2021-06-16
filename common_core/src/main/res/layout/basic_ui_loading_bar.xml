@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        style="@style/basic_ui_LoadingBarH"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        app:mpb_progressStyle="horizontal"
+        app:mpb_progressTint="@color/assist"
+        android:indeterminate="true"
+        app:mpb_showProgressBackground="true"
+        app:mpb_useIntrinsicPadding="false" />
+
+</FrameLayout>

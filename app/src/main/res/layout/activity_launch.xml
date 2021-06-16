@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="ResourceName">
+    <com.zlylib.titlebarlib.ActionBarCommon
+        android:id="@+id/abc"
+        style="@style/ActionBar.Common.Back"
+        android:background="@color/transparent"
+        app:ab_bottomLineHeight="0.5dp"
+        app:ab_bottomLineResId="@color/bar_line"
+        app:abc_leftIconColor="@color/white"
+        app:abc_titleTextColor="@color/white"
+        app:abc_rightText=""
+        app:abc_titleText="" />
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@mipmap/icon"
+        />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/app_company"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="象天气"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:textSize="22sp"
+        />
+    <TextView
+        android:id="@+id/app_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/copyright"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="北京天气有限公司"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:textSize="12dp"
+        android:textColor="@color/text_color_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:alpha="0.6"
+        android:text="©2016-2018 lsuplus.top" />
+</RelativeLayout>

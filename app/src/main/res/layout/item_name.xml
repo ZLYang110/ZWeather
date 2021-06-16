@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="@drawable/card_bg"
+    android:textColor="@color/text_invert"
+    android:textSize="15dp"
+    tools:text="北京"
+    tools:ignore="ResourceName" />

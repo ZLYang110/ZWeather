@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+
+    <dimen name="division_line" >0.5dp</dimen>
+
+    <!--距离边距-->
+    <dimen name="common_edge_20">20dp</dimen>
+    <dimen name="common_edge_15">15dp</dimen>
+    <dimen name="common_edge_10">10dp</dimen>
+
+    <dimen name="common_right_20">20dp</dimen>
+    <dimen name="common_right_15">15dp</dimen>
+    <dimen name="common_right_10">10dp</dimen>
+    <dimen name="common_right_5">5dp</dimen>
+
+    <dimen name="common_left_20">20dp</dimen>
+    <dimen name="common_left_15">15dp</dimen>
+    <dimen name="common_left_10">10dp</dimen>
+    <dimen name="common_left_5">5dp</dimen>
+
+
+    <dimen name="textSize_small">12sp</dimen>
+    <dimen name="textSize_content">14sp</dimen>
+    <dimen name="textSize_titleSmall">16sp</dimen>
+    <dimen name="textSize_title">18sp</dimen>
+    <dimen name="textSize_big">20sp</dimen>
+</resources>

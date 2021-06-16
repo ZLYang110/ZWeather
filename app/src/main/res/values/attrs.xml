@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+
+    <declare-styleable name="SunDayView">
+        <attr name="lineColor" format="color|reference"/>
+        <attr name="sunColor" format="color|reference" />
+        <attr name="timeTextSize" format="dimension" />
+        <attr name="timeTextColor" format="color|reference" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleProgress">
+        <!--背景圆弧颜色-->
+        <attr name="bgArcColor" format="color|reference" />
+        <attr name="bgArcWidth" format="dimension" />
+
+        <!--圆弧颜色-->
+        <attr name="arcColors" format="color|reference" />
+        <attr name="arcWidth" format="dimension" />
+
+        <!--圆弧起始角度，3点钟方向为0，顺时针递增，小于0或大于360进行取余-->
+        <attr name="startAngle" format="float" />
+        <!--圆弧度数,扫过的度数-->
+        <attr name="sweepAngle" format="float" />
+        <!--设置动画时间-->
+        <attr name="animTime" format="integer" />
+
+        <!--当前值-->
+        <attr name="value" format="integer" />
+        <attr name="valueSize" format="dimension" />
+        <attr name="valueColor" format="color|reference" />
+
+        <!--绘制相应内容的提示语（第一行）-->
+        <attr name="hint" format="string|reference" />
+        <attr name="hintSize" format="dimension" />
+        <attr name="hintColor" format="color|reference" />
+
+        <!--设置最大值最小值，最大最小颜色和偏移量-->
+        <attr name="maxValue" format="integer" />
+        <attr name="maxAndMinValueColor" format="color|reference"/>
+        <attr name="maxAndMinValueSize" format="dimension" />
+        <attr name="maxAndMinXOffsetPercent" format="float" />
+        <attr name="maxAndMinYOffsetPercent" format="float" />
+    </declare-styleable>
+</resources>

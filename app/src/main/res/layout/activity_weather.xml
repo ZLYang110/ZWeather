@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ResourceName">
+
+
+    <com.zlyandroid.weather.widget.WeatherView
+        android:id="@+id/weatherView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+   <!-- <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePreviewInEditMode="false">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlAccentColor="@color/white"
+            />-->
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/abl_main"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/transparent"
+                android:gravity="center"
+                app:layout_behavior=".util.AppbarZoomBehavior"
+                app:elevation="0dp">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/ctl_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:collapsedTitleGravity="center"
+                    app:expandedTitleGravity="center|bottom"
+                    app:expandedTitleMarginBottom="10dp"
+                    app:expandedTitleMarginStart="20dp"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:title="">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="#00000000"
+                        android:paddingTop="10dp"
+                        android:paddingRight="20dp"
+                        app:layout_collapseMode="pin"
+                        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <include layout="@layout/view_weather_content" />
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent"
+        app:layout_collapseMode="pin">
+
+        <RelativeLayout
+            android:id="@+id/buttonBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="right|center">
+
+            <ImageView
+                android:id="@+id/tv_more"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_more_vert_black_24dp"
+                app:tint="@color/white" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+</FrameLayout>

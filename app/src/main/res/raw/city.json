@@ -1,0 +1,152 @@
+{
+  "city": [
+    {
+      "areaId": "101010100",
+      "areaName": "北京"
+    },
+    {
+      "areaId": "",
+      "areaName": "上海"
+    },
+    {
+      "areaId": "",
+      "areaName": "广州"
+    },
+    {
+      "areaId": "",
+      "areaName": "深圳"
+    },
+    {
+      "areaId": "",
+      "areaName": "天津"
+    },
+    {
+      "areaId": "",
+      "areaName": "武汉"
+    },
+    {
+      "areaId": "",
+      "areaName": "沈阳"
+    },
+    {
+      "areaId": "",
+      "areaName": "重庆"
+    },
+    {
+      "areaId": "",
+      "areaName": "杭州"
+    },
+    {
+      "areaId": "",
+      "areaName": "南京"
+    },
+    {
+      "areaId": "",
+      "areaName": "哈尔滨"
+    },
+    {
+      "areaId": "",
+      "areaName": "长春"
+    },
+    {
+      "areaId": "",
+      "areaName": "呼和浩特"
+    },
+    {
+      "areaId": "",
+      "areaName": "石家庄"
+    },
+    {
+      "areaId": "",
+      "areaName": "银川"
+    },
+    {
+      "areaId": "",
+      "areaName": "乌鲁木齐"
+    },
+    {
+      "areaId": "",
+      "areaName": "拉萨"
+    },
+    {
+      "areaId": "",
+      "areaName": "西宁"
+    },
+    {
+      "areaId": "",
+      "areaName": "西安"
+    },
+    {
+      "areaId": "",
+      "areaName": "兰州"
+    },
+    {
+      "areaId": "",
+      "areaName": "太原"
+    },
+    {
+      "areaId": "",
+      "areaName": "昆明"
+    },
+    {
+      "areaId": "",
+      "areaName": "南宁"
+    },
+    {
+      "areaId": "",
+      "areaName": "成都"
+    },
+    {
+      "areaId": "",
+      "areaName": "长沙"
+    },
+    {
+      "areaId": "",
+      "areaName": "济南"
+    },
+    {
+      "areaId": "",
+      "areaName": "南昌"
+    },
+    {
+      "areaId": "",
+      "areaName": "合肥"
+    },
+    {
+      "areaId": "",
+      "areaName": "郑州"
+    },
+    {
+      "areaId": "",
+      "areaName": "福州"
+    },
+    {
+      "areaId": "",
+      "areaName": "贵阳"
+    },
+    {
+      "areaId": "",
+      "areaName": "海口"
+    },
+    {
+      "areaId": "",
+      "areaName": "秦皇岛"
+    },
+    {
+      "areaId": "",
+      "areaName": "桂林"
+    },
+    {
+      "areaId": "",
+      "areaName": "三亚"
+    },
+    {
+      "areaId": "",
+      "areaName": "香港"
+    },
+    {
+      "areaId": "",
+      "areaName": "澳门"
+    }
+  ]
+}

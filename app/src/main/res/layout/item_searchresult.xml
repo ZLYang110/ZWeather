@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="ResourceName">
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        tools:text="北京" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/division_line"
+        android:background="@color/background" />
+</LinearLayout>

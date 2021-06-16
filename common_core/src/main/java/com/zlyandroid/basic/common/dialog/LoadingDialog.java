@@ -1,0 +1,61 @@
+package com.zlyandroid.basic.common.dialog;
+
+import android.app.Dialog;
+import android.content.Context;
+import android.util.DisplayMetrics;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.zlyandroid.basic.common.R;
+
+
+/**
+ * @author zhangliyang
+ * GitHub: https://https://github.com/ZLYang110
+ */
+public class LoadingDialog {
+    static Dialog loadingDialog;
+    static TextView tipTextView;
+    /**
+     * 获取一个类似加载的对话框
+     *
+     * @param context 上下文
+     * @param msg     文字说明
+     * @return 对话框的对象
+     */
+    public static Dialog createLoadingDialog(Context context, String msg) {
+        /*
+         * 获得view填充器对象
+         */
+        LayoutInflater inflater = LayoutInflater.from(context);
+        /*
+         * 得到加载view
+         */
+        View v = inflater.inflate(R.layout.loading_dialog, null);
+        tipTextView =  v.findViewById(R.id.tipTextView);// 提示文字
+        if (msg != null && !msg.equals("")) {
+            tipTextView.setText(msg);// 设置加载信息
+        }
+
+        loadingDialog = new Dialog(context, R.style.loading_dialog);// 创建自定义样式dialog
+        loadingDialog.setCancelable(false);// 可以用“返回键”取消
+        loadingDialog.setCanceledOnTouchOutside(false);//
+        loadingDialog.setContentView(v);// 设置布局
+
+        DisplayMetrics dm = context.getResources().getDisplayMetrics();
+        int width = (int) (dm.widthPixels*0.3);
+        int height = ViewGroup.LayoutParams.WRAP_CONTENT;
+        loadingDialog.getWindow().setLayout(width ,height);
+
+        return loadingDialog;
+    }
+
+    public static void setMsg(String msg){
+        if (loadingDialog!=null&&loadingDialog.isShowing()){
+            tipTextView.setText(msg);// 设置加载信息
+        }
+
+    }
+}

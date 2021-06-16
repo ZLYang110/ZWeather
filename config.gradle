@@ -1,0 +1,133 @@
+ext {
+    //android开发版本配置
+    android = [
+            compileSdkVersion: 30,
+            buildToolsVersion: "30.0.2",
+            applicationId    : "com.zlyandroid.weather",
+            minSdkVersion    : 24,
+            targetSdkVersion : 30,
+            versionCode      : 1,
+            versionName      : "1.01",
+
+    ]
+
+    compileOptions = [
+            sourceCompatibility: JavaVersion.VERSION_1_8,
+            targetCompatibility: JavaVersion.VERSION_1_8,
+    ]
+    //version配置
+    versions = [
+            room                                :"2.2.5",
+            okhttp3                             :"3.11.0",
+            retrofit                            :"2.4.0",
+            retrofitKotlinMoshi                 :"1.7.0",
+            rxJava                              :"2.2.2",
+            rxAndroid                           :"2.1.0",
+            rxKotlin                            :"2.3.0",
+            rxlifecycle                         :"4.0.2",
+            gson                                :"2.8.5",
+            eventbus                            :"3.2.0",
+            MyPermission                        :"1.0",//权限申请
+            TitleBar                            :"1.0.1",//Android 自定义性ActionBar
+            UpperDialog                         : "1.4.2",//用于替代Android自带Dialog和PopupWindow
+            bravh                               : "2.9.50",
+            flexbox                             : "1.0.0",//Flexbox for Android
+            glide                               : "4.11.0",//图片框架
+            SmartRefreshLayout                  :"1.1.2", //刷新框架
+            BaseRecyclerViewAdapterHelper       : "2.9.34",//适配器
+            MagicIndicator                      : "1.5.0",//指示器
+            PickerView                          : "4.1.9",//选择器
+            SuperTextView                       : "v3.2.5.99",
+            arouter                             : "1.4.0",// 路由
+            arouterompiler                      : "1.2.1",// 路由
+            greendao                            : "3.3.0",// 数据库
+            sqlcipher                           : "4.4.2",// 数据库加密
+            roundview                           : "1.1.4@aar",//  圆角 view
+            swipeBack                           : "1.0.1",//  侧滑关闭页面
+            imageViewer                         : "1.0.2",//  图片放大
+            materialProgressBar                 : "1.4.2", // 进度条
+            calendarview                        : "3.7.0", // 日历
+            SCardView                           : "1.2",//
+            location                            : "5.2.0",//高德定位
+            flexbox                             : "1.0.0",// 流式布局
+            swipelayout                         : "1.2.0@aar",// item 左右滑动
+
+
+
+    ]
+    //androidx配置
+    androidx = [
+             constraintlayout                   : 'androidx.constraintlayout:constraintlayout:1.1.3',
+             appcompat                          : 'androidx.appcompat:appcompat:1.1.0',
+             ktx                                : 'androidx.core:core-ktx:1.2.0',
+             viewpager2                         : 'androidx.viewpager2:viewpager2:1.0.0',
+             design                             : 'com.android.support:design:28.0.0',
+             material                           : 'com.google.android.material:material:1.1.0',
+    ]
+
+    retrofit = [
+
+            okhttp3                                    : "com.squareup.okhttp3:okhttp:$versions.okhttp3",
+            okhttp3LoggerInterceptor                   : "com.squareup.okhttp3:logging-interceptor:$versions.okhttp3",
+
+            retrofit                                   : "com.squareup.retrofit2:retrofit:$versions.retrofit",
+            retrofitConverterGson                      : "com.squareup.retrofit2:converter-gson:$versions.retrofit",
+            retrofitAdapterRxjava2                     : "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit",
+            retrofitConverterMoshi                     : "com.squareup.retrofit2:converter-moshi:$versions.retrofit",
+            retrofitKotlinMoshi                        : "com.squareup.moshi:moshi-kotlin:$versions.retrofitKotlinMoshi",
+
+            rxJava                                     : "io.reactivex.rxjava2:rxjava:$versions.rxJava",
+            rxAndroid                                  : "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid",
+            rxKotlin                                   : "io.reactivex.rxjava2:rxkotlin:$versions.rxKotlin",
+
+            rxlifecycle                                : "com.trello.rxlifecycle4:rxlifecycle:$versions.rxlifecycle",
+            rxlifecycleAndroid                         : "com.trello.rxlifecycle4:rxlifecycle-android:$versions.rxlifecycle",
+            rxlifecycleComponents                      : "com.trello.rxlifecycle4:rxlifecycle-components:$versions.rxlifecycle",
+            rxlifecycleComponentsPreference            : "com.trello.rxlifecycle4:rxlifecycle-components-preference:$versions.rxlifecycle",
+    ]
+
+    //依赖第三方配置
+    dependencies = [
+            //***************************************框架类*************************************************
+            roomRuntime                                : "androidx.room:room-runtime:$versions.room",
+            roomCompiler                               : "androidx.room:room-compiler:$versions.room",
+            roomKtx                                    : "androidx.room:room-ktx:$versions.room",
+
+            arouter                                    : "com.alibaba:arouter-api:$versions.arouter",
+            aroutercompiler                            : "com.alibaba:arouter-compiler:$versions.arouterompiler",
+
+            eventbus                                   : "org.greenrobot:eventbus:$versions.eventbus",
+            gson                                       : "com.google.code.gson:gson:$versions.gson",
+            bravh                                      : "com.github.CymChad:BaseRecyclerViewAdapterHelper:$versions.bravh",
+            flexbox                                    : "com.google.android:flexbox:$versions.flexbox",
+            glide                                      : "com.github.bumptech.glide:glide:$versions.glide",
+            SmartRefreshLayout                         : "com.scwang.smartrefresh:SmartRefreshLayout:$versions.SmartRefreshLayout",
+            BaseRecyclerViewAdapterHelper              : "com.github.CymChad:BaseRecyclerViewAdapterHelper:$versions.BaseRecyclerViewAdapterHelper",
+            MagicIndicator                             : "com.github.hackware1993:MagicIndicator:$versions.MagicIndicator",
+            MyPermission                               : "com.github.ZLYang110:MyPermission:$versions.MyPermission",
+            greendao                                   : "org.greenrobot:greendao:$versions.greendao",
+            sqlcipher                                  : "net.zetetic:android-database-sqlcipher:$versions.sqlcipher",
+            roundview                                  : "com.flyco.roundview:FlycoRoundView_Lib:$versions.roundview",
+            swipeBack                                  : "com.github.ZLYang110:SwipeBack:$versions.swipeBack",
+            imageViewer                                : "com.susion:image-viewer:$versions.imageViewer",
+            materialProgressBar                        : "me.zhanghai.android.materialprogressbar:library:$versions.materialProgressBar",
+            calendarview                               : "com.haibin:calendarview:$versions.calendarview",
+            location                                   : "com.amap.api:location:$versions.location",//高德定位
+            flexbox                                    : "com.google.android:flexbox:$versions.flexbox",
+            swipelayout                                : "com.daimajia.swipelayout:library:$versions.swipelayout",
+
+            //***************************************界面类*************************************************
+            UpperDialog                                 : "com.github.ZLYang110:UpperDialog:$versions.UpperDialog",
+            TitleBar                                    : "com.github.ZLYang110:TitleBar:$versions.TitleBar",
+            PickerView                                  : "com.contrarywind:Android-PickerView:$versions.PickerView",
+            SuperTextView                               : "com.github.chenBingX:SuperTextView:$versions.SuperTextView",
+            SCardView                                   : "io.github.meetsl:SCardView:$versions.SCardView",
+
+    ]
+
+    androidxLib = androidx.values()
+    networkLibs = retrofit.values()
+
+}
+
+

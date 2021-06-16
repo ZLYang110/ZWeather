@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="basic_ui_LoadingBarH" parent="Widget.MaterialProgressBar.ProgressBar">
+        <item name="android:minHeight">1dp</item>
+        <item name="android:maxHeight">5dp</item>
+        <item name="mpb_showProgressBackground">true</item>
+        <item name="mpb_progressTint">@color/assist</item>
+        <item name="mpb_indeterminateTint">@color/assist</item>
+        <item name="mpb_progressStyle">horizontal</item>
+        <item name="mpb_useIntrinsicPadding">false</item>
+    </style>
+
+    <style name="basic_ui_LoadingBarC" parent="Widget.AppCompat.ProgressBar">
+    </style>
+
+
+    <style name="ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- <item name="android:background">?attr/colorPrimary</item>-->
+        <item name="android:background">@drawable/bg_white</item>
+        <item name="ab_statusBarMode">light</item><!--状态栏图标颜色模式，默认light-->
+        <item name="ab_bottomLineHeight">1dp</item><!--底部分割线高度，默认为0dp-->
+        <item name="ab_bottomLineResId">@color/line</item>
+        <item name="ab_statusBarColor">@color/transparent</item><!--状态栏颜色，默认透明-->
+        <item name="ab_foregroundLayerLayout">@layout/basic_ui_loading_bar</item><!--logging-->
+        <item name="ab_titleBarHeight">48dp</item>
+        <item name="ab_immersion">immersed</item>
+        <item name="ab_statusBarVisible">auto</item>
+    </style>
+
+    <style name="ActionBar.Common">
+        <item name="abc_titleTextColor">@color/text_surface</item>
+        <item name="abc_titleTextSize">18dp</item>
+        <item name="abc_leftIconColor">@color/text_surface</item>
+        <item name="abc_leftIconPadding">15dp</item>
+        <item name="abc_leftIconMarginLeft">5dp</item>
+        <item name="abc_leftTextColor">@color/text_surface</item>
+        <item name="abc_rightIconColor">@color/text_surface</item>
+        <item name="abc_rightIconPadding">13dp</item>
+        <item name="abc_rightIconMarginRight">3dp</item>
+        <item name="abc_rightTextColor">@color/text_surface</item>
+    </style>
+
+    <style name="ActionBar.Common.Back">
+        <item name="abc_leftIconRes">@drawable/ic_back</item>
+        <item name="abc_leftIconMarginLeft">0dp</item>
+        <item name="abc_leftIconClickToFinish">true</item>
+    </style>
+</resources>

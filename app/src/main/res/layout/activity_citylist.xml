@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ResourceName">
+
+    <com.zlyandroid.weather.widget.WeatherView
+        android:id="@+id/weatherView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <com.zlylib.titlebarlib.ActionBarCommon
+            android:id="@+id/abc"
+            style="@style/ActionBar.Common.Back"
+            android:background="@color/transparent"
+            app:ab_bottomLineHeight="0.5dp"
+            app:ab_bottomLineResId="@color/bar_line"
+            app:ab_statusBarMode="dark"
+            app:abc_leftIconClickToFinish="false"
+            app:abc_leftIconColor="@color/white"
+            app:abc_rightText=""
+
+            app:abc_titleText="城市"
+            app:abc_titleTextColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abc"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/search_bar_title_et_bg"
+                android:hint="请输入要查询的城市"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColorHint="@color/text_invert_alpha"
+                android:imeOptions="actionSearch"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_search"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="热门城市"
+                android:textColor="@color/text_invert_alpha"
+                android:textSize="16dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_citylist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:overScrollMode="never"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp"
+                android:scrollbars="none"
+                tools:layoutManager="GridLayoutManager"
+                tools:listitem="@layout/item_name"
+                tools:spanCount="3" />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_search"
+            />
+    </RelativeLayout>
+
+
+</FrameLayout>

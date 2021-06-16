@@ -1,0 +1,54 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility rootProject.ext.compileOptions.sourceCompatibility
+        targetCompatibility rootProject.ext.compileOptions.targetCompatibility
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    // Androidx
+    api rootProject.ext.androidxLib
+    // 网络请求库
+    api rootProject.ext.networkLibs
+
+    api rootProject.ext.dependencies.eventbus
+    api rootProject.ext.dependencies.gson
+    api rootProject.ext.dependencies.UpperDialog
+    api rootProject.ext.dependencies.BaseRecyclerViewAdapterHelper
+    api rootProject.ext.dependencies.swipeBack
+    api rootProject.ext.dependencies.materialProgressBar
+    api rootProject.ext.dependencies.SmartRefreshLayout
+
+    api rootProject.ext.dependencies.TitleBar
+    api rootProject.ext.dependencies.MyPermission
+
+
+}
