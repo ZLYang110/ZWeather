@@ -15,6 +15,10 @@
 ## API
 [**和风天气 开放 API**](https://dev.qweather.com/)
 
+## 下载体验
+[Demo.apk](https://github.com/ZLYang110/ZWeather/blob/master/screenshot/app-debug.apk)
+
+
 ## 项目截图
 
 ---
@@ -34,8 +38,6 @@
 
 ---
 
-## 下载体验
-[Demo.apk](https://github.com/ZLYang110/ZWeather\app\build\outputs\apk\debug\app-debug.apk)
 
 
 ## 主要功能
@@ -48,6 +50,8 @@
 - 作者信息。
 
 **开源不易，如果喜欢的话希望给个 `Star` 或 `Fork` ^_^ ，谢谢~~**
+
+
 
 
 
